@@ -1,0 +1,21 @@
+[package]
+name = "serverist-backend"
+version = "0.1.0"
+edition = "2021"
+authors = ["uramnoil uramnoil@outlook.jp"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+common = { path = "../common" }
+serverist = { path = "../serverist" }
+auth = { path = "../auth" }
+actix-web = "4.0.1"
+actix-cors = "0.6.1"
+juniper = "0.15.9"
+juniper-from-schema = "0.5.1"
+juniper-eager-loading = "0.5.0"
+chrono = "0.4"
+chrono-tz = "0.6.1"
+diesel = { version = "1.4.3", features = ["mysql", "r2d2", "chrono"] }
+dotenv = "0.15.0"

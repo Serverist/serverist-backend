@@ -1,0 +1,7 @@
+[workspace]
+members = [
+    "serverist",
+    "auth",
+    "common",
+    "app"
+]
